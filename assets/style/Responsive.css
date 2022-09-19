@@ -1,0 +1,136 @@
+@media only screen and ( max-width: 992px) {
+    .header-top{
+        display: none !important;
+    }
+    .menu{
+        position: fixed;
+        display: block !important;
+        top: 108px;
+      right: -1px;
+        width: 290px;
+        background-color: var(--eerie-black-1);
+        opacity: 0;
+        transition: .3s var(--cubic-out);
+    }
+    .menu.active{
+         opacity: 1;
+    }
+    
+   
+    .menu-item a:hover::before {
+        opacity: 0 !important;
+      
+      }
+      .menu .menu-item{
+        border-block-end: 1px solid var(--white_15);
+      }
+      .menu-toggle{
+        display: block !important;
+      }
+      .header-bottom::before{
+        display: none !important;
+      }
+      .menu-toggle.active .open{
+         display: none;
+      }
+      .menu-toggle.active .close{
+        display: block !important;
+      }
+      .search{
+        margin:0 20px ;
+      }
+      .hero-logo{
+        display: none;
+      }
+      .hero-content{
+        text-align: center;
+      }
+      .hero-btn{
+        margin: auto !important;
+      }
+      .footer-content{
+        grid-template-columns: repeat(2,1fr) !important;
+      }
+    
+}
+
+.Hero{
+    background: url(../images/hero-bg.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;
+    height: 820px;
+}
+
+
+@media only screen and ( max-width: 1200px) {
+  .matches{
+    display: block !important;
+  }
+
+  .away{
+    margin-left: auto;
+   
+  }
+  .match-time{
+    margin: 50px 0;
+  }
+  .scrollbar-item {
+    min-width: 33.3333% !important;
+    
+  }
+  .news-letter-content {
+    display: block !important;
+    text-align: center;
+  
+  }
+  .news-letter-content h2{
+    margin-bottom: 15px;
+    font-size: 1.5rem!important;
+  }
+ 
+}
+
+
+@media only screen and ( max-width: 576px) {
+       
+  .scrollbar-item {
+    min-width: 100% !important;
+    
+  }
+  .footer-content{
+    grid-template-columns: repeat(1,1fr) !important;
+  }
+.badge{
+  display: none !important;
+}
+}
+@media only screen and ( max-width: 992px) {
+  .inp-wrapper input{
+    font-size: 60%;
+  }
+  .new-game-content{
+    padding: 10px 20px !important;
+  }
+  .scrollbar-item {
+    min-width: 50% !important;
+    
+  }
+  .new-game-title{
+    font-size: 1.2rem !important;
+  }
+  .sec-title{
+    font-size: var(--fs-8) !important;
+  }
+  .card-content h3 {
+    font-size: 1.15rem !important;
+  }
+}
+  
+@media only screen and ( max-width: 768px) {
+  .scrollbar-item {
+    min-width: 100% !important;
+    
+  }
+  
+}
+
